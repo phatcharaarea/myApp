@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-import Flex from '../../components/UI/Flex/Flex'
+import { Text, View, TouchableOpacity } from 'react-native'
+// import { NavigationContainer} from '@react-navigation/native'
+// import AppNavigator from './AppNavigator'
 
 class HomeScreen extends Component {
     render() {
         return (
             <View>
-                <Flex />
+                <Text>Home Screen</Text>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('FlexRow')}>
+                    <Text>Click</Text>
+                </TouchableOpacity>
             </View>
         )
     }
